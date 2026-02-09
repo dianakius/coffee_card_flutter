@@ -11,7 +11,25 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[700],
         centerTitle: true,
       ),
-      body: const Text('check'),
+      body: Column(
+        children: [
+          Container(
+            color: Colors.brown[200],
+            padding: const EdgeInsets.all(20),
+            child: const Text('How I like my coffee'),
+          ),
+          Container(
+            color: Colors.brown[200],
+            padding: const EdgeInsets.all(16),
+            child: const Text('How I like my coffee'),
+          ),
+          Container(
+            color: Colors.brown[200],
+            padding: const EdgeInsets.all(8),
+            child: const Text('How I like my coffee'),
+          ),
+        ],
+      ),
     );
   }
 }
