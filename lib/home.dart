@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:coffee_card/coffee_prefs.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -7,26 +8,25 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Coffee Card'),
+        title: const Text(
+          'My Coffee Card',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
         backgroundColor: Colors.brown[700],
         centerTitle: true,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            color: Colors.brown[200],
+            color: const Color.fromARGB(255, 201, 92, 56),
             padding: const EdgeInsets.all(20),
             child: const Text('How I like my coffee'),
           ),
           Container(
             color: Colors.brown[200],
             padding: const EdgeInsets.all(16),
-            child: const Text('How I like my coffee'),
-          ),
-          Container(
-            color: Colors.brown[200],
-            padding: const EdgeInsets.all(8),
-            child: const Text('How I like my coffee'),
+            child: const CoffeePrefs(),
           ),
         ],
       ),
