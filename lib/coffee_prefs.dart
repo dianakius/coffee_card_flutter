@@ -26,7 +26,9 @@ class CoffeePrefs extends StatelessWidget {
                 backgroundColor: Colors.brown,
                 foregroundColor: Colors.white,
               ),
-              onPressed: increaseStrength, child: const Text('+')),
+              onPressed: increaseStrength,
+              child: const Text('+'),
+            ),
           ],
         ),
         Row(
@@ -34,11 +36,14 @@ class CoffeePrefs extends StatelessWidget {
             const Text('Sugars: '),
             const Text('3'),
             const Expanded(child: SizedBox()),
-            TextButton(
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.yellow,
+            FilledButton(
+              style: FilledButton.styleFrom(
+                backgroundColor: Colors.brown,
+                foregroundColor: Colors.white,
               ),
-                onPressed: increaseSugars, child: const Text('+')),
+              onPressed: increaseSugars,
+              child: const Text('+'),
+            ),
           ],
         ),
       ],
