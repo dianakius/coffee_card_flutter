@@ -7,9 +7,9 @@ void main() {
         appBar: AppBar(
           title: const Text('My Coffee Card'),
           backgroundColor: Colors.brown[700],
-          centerTitle: true, 
+          centerTitle: true,
         ),
-        body: Text(),
+        body: Home(),
       ),
     ),
   );
@@ -19,7 +19,20 @@ class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
-  Widget build(BuildContext context){
-    return const Text('Hello, coffee lovers!');
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.grey,
+      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.fromLTRB(10, 40, 0, 0),
+      child: const Text(
+        'Hello, coffee lovers!!',
+        style: TextStyle(
+          fontSize: 18,
+          letterSpacing: 4,
+          decoration: TextDecoration.underline,
+          fontStyle: FontStyle.italic,
+        ),
+      ),
+    );
   }
 }
