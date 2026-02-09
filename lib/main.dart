@@ -1,38 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:coffee_card/home.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My Coffee Card'),
-          backgroundColor: Colors.brown[700],
-          centerTitle: true,
-        ),
-        body: Home(),
-      ),
-    ),
-  );
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey,
-      padding: const EdgeInsets.all(20),
-      margin: const EdgeInsets.fromLTRB(10, 40, 0, 0),
-      child: const Text(
-        'Hello, coffee lovers!!',
-        style: TextStyle(
-          fontSize: 18,
-          letterSpacing: 4,
-          decoration: TextDecoration.underline,
-          fontStyle: FontStyle.italic,
-        ),
-      ),
-    );
-  }
+  runApp(const MaterialApp(home: Home()));
 }
